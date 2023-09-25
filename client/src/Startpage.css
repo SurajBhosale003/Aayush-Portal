@@ -1,0 +1,153 @@
+/* Startup.css */
+
+.navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+}
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px; 
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-item {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .navbar-item a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-item a:hover {
+    color: #0056b3;
+  }
+  
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px); 
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }  
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f8f8; 
+  }
+  
+  .get-started-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-section {
+    text-align: center;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Specify your desired font family */
+}
+
+.two-portions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.portion {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.quote {
+  font-size: 3rem; /* Larger font size */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+}
+
+.get-started-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3;
+}
+
+.portion img {
+  max-width: 100%;
+  height: auto;
+}
+
+.portion:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
