@@ -3,13 +3,21 @@
 @tailwind utilities;
 
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   /* text-align: center; */
+  overflow: hidden;
 }
 
 
 
-
-
+/* Login */
+.left-login-side{
+  display: flex;
+  flex-direction: column;
+  gap: 2;
+  max-width: 30vh;
+  padding: 3rem;
+  margin : 2rem;
+}

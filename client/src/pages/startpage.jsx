@@ -4,8 +4,10 @@ import '../Startpage.css';
 import startupimg from '../assets/startup.png'
 import startupimg1 from '../assets/startup.jpg'
 import Footer from '../components/Footer'
+import { useNavigate } from 'react-router-dom';
 
 function Startpage() {
+  const navigate = useNavigate();
 return (
 <div className="landing-page">
     <nav className="navbar">
@@ -22,10 +24,10 @@ return (
             <a href="#contact">For Companies</a>
         </li>
         <li className="navbar-item">
-            <button className="signup-button">Login</button>
+            <button className="signup-button" onClick={()=>{navigate('/login')}}>Login</button>
         </li>
         <li className="navbar-item">
-            <button className="signup-button">Signup</button>
+            <button className="signup-button" onClick={()=>{navigate('/signup')}}>Signup</button>
         </li>
         </ul>
     </div>
@@ -111,7 +113,7 @@ return (
         <a href="#">Sign up now</a>
       </div>
     </div>
-
+<br/>
     <div className="info-card">
       <div className="info-text">
         <h2>NEED TALENT?</h2>
@@ -133,6 +135,8 @@ return (
     <br />
     <br />
 
+<div className='quote-card-container'>
+  
     <div className="centered-headings">
       <h1 className="main-heading">DON'T JUST TAKE IT FROM US</h1>
       <h2 className="sub-heading">From our users</h2>
@@ -181,6 +185,7 @@ return (
         Half of the offers I give are sourced from Wellfound (AngelList Talent). It's the best product for anyone looking for startup talent.
         </p>
       </div>
+    </div>
     </div>
 
 <Footer/>

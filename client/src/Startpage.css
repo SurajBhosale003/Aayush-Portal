@@ -243,6 +243,11 @@ body {
   justify-content: space-between;
   margin: 0 150px;
 
+
+}
+.quote-card-container{
+  margin: 2rem;
+  min-height: 80vh;
 }
 
 .quote-card {
