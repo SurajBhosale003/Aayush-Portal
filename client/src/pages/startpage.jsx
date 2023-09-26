@@ -1,8 +1,9 @@
-import React from 'react';
+/* eslint-disable react/no-unescaped-entities */
+
 import '../Startpage.css';
 import startupimg from '../assets/startup.png'
 import startupimg1 from '../assets/startup.jpg'
-
+import Footer from '../components/Footer'
 
 function Startpage() {
 return (
@@ -21,10 +22,10 @@ return (
             <a href="#contact">For Companies</a>
         </li>
         <li className="navbar-item">
-            <button className="#">Login</button>
+            <button className="signup-button">Login</button>
         </li>
         <li className="navbar-item">
-            <button className="#">Signup</button>
+            <button className="signup-button">Signup</button>
         </li>
         </ul>
     </div>
@@ -35,8 +36,8 @@ return (
     <div className="portion">
         <div className="content">
         <div className="quote">
-            <p className="quote-text">
-            Your Innovative Journey Begins Here
+            <p className="quote-head-text">
+            Your Innovative <br/>Journey  <br/>Begins Here
             </p>
             
         </div>
@@ -62,6 +63,8 @@ return (
     <br />
     <br />
 
+<div className="reading-container">
+  <div>
     <div className="stats-container">
     <div className="stats-item">
         <h2>130K+</h2>
@@ -87,7 +90,8 @@ return (
         <p>Hires</p>
     </div>
     </div>
-
+    </div>
+  </div>
     <br />
     <br />
 
@@ -179,46 +183,7 @@ return (
       </div>
     </div>
 
-    <footer className="footer">
-      <div className="footer-part1">
-        <p>AYUSH</p>
-      </div>
-      <div className="footer-part2">
-        <div className="column">
-          <p>For Candidates</p>
-          <ul>
-            <li>Overview</li>
-            <li>Startup Jobs</li>
-            <li>Featured</li>
-            <li>Salary Calculator</li>
-            <li>Startup Hiring Data</li>
-          </ul>
-        </div>
-        <div className="column">
-          <p>For Recruiters</p>
-          <ul>
-            <li>Overview</li>
-            <li>Recruit Pro</li>
-            <li>Curated</li>
-            <li>RecruiterCloud</li>
-            <li>Hire Developers</li>
-            <li>Pricing</li>
-          </ul>
-        </div>
-        <div className="column">
-          <p>Company</p>
-          <ul>
-            <li>About</li>
-            <li>AngelList Venture</li>
-            <li>Help</li>
-            <li>Blog</li>
-            <li>Terms & Risks</li>
-            <li>Privacy & Cookies</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
+<Footer/>
 </div>
 );
 }
